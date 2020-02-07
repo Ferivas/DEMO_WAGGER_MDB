@@ -13,7 +13,7 @@
 ' ENABUG.3=1 indica valores promedio de canales WAGGER
 
 
-$version 0 , 1 , 387
+$version 0 , 1 , 389
 $regfile = "m1284pdef.dat"
 '$crystal = 11059200
 $crystal = 7372800

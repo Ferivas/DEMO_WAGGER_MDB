@@ -9,7 +9,7 @@
 
 $nocompile
 
-$projecttime = 587
+$projecttime = 588
 '*******************************************************************************
 'Declaracion de subrutinas
 '*******************************************************************************
@@ -1951,7 +1951,7 @@ Sub Procser()
                Valmdb = Val(cmdsplit(3))
                'Set Iniwrmdb
                Atsnd = "Se configura reg DEC=" + Str(addrmdb) + " a " + Str(valmdb)
-               Print#1 , "!SETRMD," ; Addrmdb ; "," ; Valmdb
+               Print #1 , "!SETRMD," ; Addrmdb ; "," ; Valmdb
             Else
                Cmderr = 4
             End If
@@ -1962,7 +1962,7 @@ Sub Procser()
                Addrmdb = Val(cmdsplit(2))
                'Set Inirdmdb
                Atsnd = "Ini lectura reg DEC=" + Str(addrmdb) + "; HEX=" + Hex(addrmdb)
-               Print#1 , "!LEERMD," ; Addrmdb
+               Print #1 , "!LEERMD," ; Addrmdb
             Else
                Cmderr = 4
             End If
@@ -1974,7 +1974,7 @@ Sub Procser()
                Valmdb = Hexval(cmdsplit(3))
                'Set Iniwrmdb
                Atsnd = "Se configura reg HEX" + Hex(addrmdb) + " a HEX=" + Hex(valmdb) + "; DEC=" + Str(valmdb)
-               Print#1 , "!SETRMH," ; Hex(addrmdb) ; "," ; Hex(valmdb)
+               Print #1 , "!SETRMH," ; Hex(addrmdb) ; "," ; Hex(valmdb)
             Else
                Cmderr = 4
             End If
@@ -1985,7 +1985,7 @@ Sub Procser()
                Addrmdb = Hexval(cmdsplit(2))
                'Set Inirdmdb
                Atsnd = "Ini lectura reg HEX=" + Hex(addrmdb) + "; DEC=" + Str(addrmdb)
-               Print#1 , "!LEERMH," ; Hex(addrmdb)
+               Print #1 , "!LEERMH," ; Hex(addrmdb)
             Else
                Cmderr = 4
             End If
@@ -1997,7 +1997,7 @@ Sub Procser()
                Addrmdb = Hexval(cmdsplit(2))
                'Set Inirdiprmdb
                Atsnd = "Ini lectura reg InputReg HEX=" + Hex(addrmdb) + "; DEC=" + Str(addrmdb)
-               Print#1 , "!LEERIH," ; Hex(addrmdb)
+               Print #1 , "!LEERIH," ; Hex(addrmdb)
             Else
                Cmderr = 4
             End If
